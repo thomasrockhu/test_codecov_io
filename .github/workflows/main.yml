@@ -39,6 +39,7 @@ jobs:
           unityVersion: ${{ matrix.unityVersion }}
           testMode: ${{ matrix.testMode }}
           artifactsPath: ${{ matrix.testMode }}-artifacts
+          customParameters: -enableCodeCoverage -coverageResultsPath ${{ matrix.testMode }}-artifacts/coverage -coverageOptions "generateAdditionalMetrics;generateHtmlReport;generateHtmlReportHistory"
       - uses: actions/upload-artifact@v1
         with:
           name: Test results for ${{ matrix.testMode }}

@@ -19,7 +19,7 @@ jobs:
         projectPath:
           - Asteroids
         unityVersion:
-          - 2019.4
+          - 2019.4.2f1
         testMode:
           - playmode
     steps:

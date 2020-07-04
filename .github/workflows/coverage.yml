@@ -14,3 +14,6 @@ jobs:
         uses: codecov/codecov-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          file: Asteroids/CodeCoverage/Asteroids-opencov/PlayMode/TestCoverageResults_0000.xml
+          fixes:
+            - "C:/Projects/GitHub/test_codecov_io/::"

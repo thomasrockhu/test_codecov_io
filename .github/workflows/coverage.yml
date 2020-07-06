@@ -11,8 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: What directory am I in
-        run: pwd && ls
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1
         #fixes:

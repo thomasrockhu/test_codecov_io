@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: What directory am I in
-        run: pwd
+        run: cd pwd && ls
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1
         #fixes:
             #- "C:/Projects/GitHub/test_codecov_io/::"
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          file: "./Asteroids/CodeCoverage/Asteroids-opencov/PlayMode/TestCoverageResults_0000.xml"
+          file: "/home/runner/work/test_codecov_io/test_codecov_io/Asteroids/CodeCoverage/Asteroids-opencov/PlayMode/TestCoverageResults_0000.xml"
